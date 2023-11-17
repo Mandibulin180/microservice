@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.usuario.service.models.Carro;
 
-@FeignClient(value = "carro-service",url = "http://localhost:8002")
+@FeignClient(value = "carro-service")
 public interface CarroFeignClient {
 
     @RequestMapping(method = RequestMethod.POST,value = "/carro")
